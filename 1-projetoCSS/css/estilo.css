@@ -1,0 +1,114 @@
+body{
+	font-family: Arial, sans-serif;
+	background-color: #ccc;
+	margin:0px;
+}
+
+.hero{
+	background-image: url("../imagens/bg-3.jpg");
+	height: 500px;
+	background-position: right center;
+	background-size: cover;
+    border: 1px solid transparent;
+}
+
+.hero-content{
+	text-align: center;
+	color: white;
+	margin-top: 150px;
+}
+
+.hero-content h1{
+	text-transform: uppercase;
+	font-size: 46px;
+	/*text-shadow: x y <esfumaçamento> <cor aplicada>*/
+	text-shadow: 3px 3px 2px #333;
+    letter-spacing: 4px;
+}
+
+.hero-content p{
+    background-color: rgba(0,0,0,.8);
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    display: inline-block;
+ }
+
+.hero nav ul{
+    /* 
+        com li tendo comportamento de elemento de linha, basta configurar o text-align
+    */
+    text-align: right;
+    margin: 10px 25px 0 0;
+}
+.hero nav li{
+    /* inline-block: define comportamento de li como sendo de elemento de linha */
+	display: inline-block;
+	list-style: none;
+	/*padding: 10px;*/
+	border: 1px solid white;
+}
+
+.hero nav a {
+	/*background: #000;*/
+	background: rgb(0,0,0);
+	background: rgba(3,3,3,0.3);
+	display: block;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+.hero nav a:hover{
+    background:rgba(4,4,4,0.5);
+}
+.hero nav li{
+    display: inline-block;
+}
+
+main{
+	width: 80%;
+	margin:auto;
+}
+
+.card{
+    width: 32%;
+/*    display: inline-block;*/
+    float:left;
+    box-sizing: border-box;
+/*    margin-left:1%;*/
+}
+
+.card-1,.card-2{
+    margin-right: 2%;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background-color: #333;
+    color: white; 
+    margin:0;
+    padding:9px;
+    text-transform:uppercase;
+}
+
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top:15px;
+    overflow: auto;
+}
+
+.rodape{
+	height: 80px;
+	line-height: 80px;
+	color:white;
+	font-size: 14px;
+	text-align: center;
+	background-color: #a3a3a3;
+}

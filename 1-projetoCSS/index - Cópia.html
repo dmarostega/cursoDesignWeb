@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Projeto 1 - CSS</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+			font-family: Arial;
+		}
+		body{
+			width: 600px;
+			margin: auto;
+		}
+	
+		body>section{
+			background-color: #fff;
+		}
+
+		header.top{
+			background-image:url("imagens/bg-3.jpg");	
+			background-position: right;bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			/*height: 320px;	*/
+		}
+		header.top p{
+			color: #ddd;
+			font-size: 12px;
+			padding: 10px;
+			width:180px;
+			margin:auto;
+			border-bottom: 1px solid #ccc;
+			background-color: black;
+			opacity: 0.6;
+
+		}
+		h1{
+			/*margin-top: 45px;*/
+			padding: 70px ;
+			width: 250px;
+			text-align: center;
+			color:#fff;
+			margin:auto;
+			font-size: 30px
+		}
+		nav{
+			padding:15px;
+			text-align: right;
+		}
+		a{
+			padding: 10px;
+			border: 1px solid;
+			color: #ddd;
+			font-size: 8px;
+			text-decoration: none;
+			background-color: #848484;
+		}
+		a:hover{
+			color: #ccc;
+		}
+		
+		li{
+			display: inline-block;
+			text-decoration: none;
+		}
+		section article{
+			padding:10px 20px;
+			background-color: #fff;
+		}
+		main{
+			background-color: #fff;
+		}
+
+		section.destaques article footer{
+			width:30%;
+			margin:0px;
+			background-color: #2E2E2E;
+			color: #ccc;
+			font-size: 10px;
+			padding: 8px;
+		}
+
+		section.destaques article{
+			/*width: 150px;*/
+			padding: 8px;
+			border:1px solid red;
+
+		}
+
+		section.destaques article {
+			/*width:30%;*/
+			/*margin-bottom: 0px;*/
+		}
+
+		section.second{
+			background-color: #fff;
+		}
+		section{
+			
+		}
+
+	</style>
+</head>
+<body>
+	<header class="top">		
+		<nav>
+			<ul>
+				<li><a href="#">INICIO</a></li>
+				<li><a href="#">QUEM SOU EU</a></li>
+				<li><a href="#">CONTATO</a></li>
+			</ul>
+		</nav>
+		<h1>CURSO WEB FUNDAMENTOS</h1>
+		<p><span>Aprenda HTML,CSS e JavaScript</span></p>
+	</header>
+	<main>
+		<section class="destaques">
+			<article >
+				<img src="imagens/card_01.png">
+				<footer>SELETORES</footer>
+			</article>
+			<article>
+				<img src="imagens/card_02.jpg">			
+				<footer>POSICIONAMENTO</footer>
+			</article>
+			<article>
+				<img src="imagens/card_03.jpg">
+				<footer>FONTES E ÍCONES</footer>
+			</article>
+		</section>
+		<section class="second">
+			<article>
+				<header>TITULO ON SECTION</header>
+				<p>Paragrafo 1</p>
+				<p>Paragrafo 2</p>
+			</article>		
+		</section>
+	</main>
+	<footer>
+		<p>Copyright 2016</p>
+	</footer>
+</body>
+</html>
