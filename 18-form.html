@@ -1,0 +1,100 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo Formulário de Login</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">    
+        <style>
+            body{
+                width: 300px;
+                margin: auto;
+            }
+            
+            label,input{
+                display: block;
+                width:100%;
+                box-sizing: border-box;
+            }
+            
+            label,input:not(type['radio']){
+                display: inline;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>Novos Tipos de entrada para Formulários...</h1>
+        
+        <form action="#" method="POST" class="form-login">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome</label>
+                <input maxlength="35" type="text" required autofocus placeholder="Digite seu nome">
+                <label>Data Nascimento</label>
+                <input type="date" min="2001-01-31" max="2119-01-31">
+                <label>E-mail</label>
+                <input type="email"  required>
+                <hr>
+                <label>Quantidade de Litros</label>
+                <input type="number" max="10" min="0" step=".5">
+                
+                <div style="display: inline">
+                    <p>Sexo</p>
+                    <label>Masculino
+                        <input type="radio" name="sexo" value="M">
+                    </label>
+                    <label>Feminino
+                        <input type="radio" name="sexo" value="F">
+                    </label>
+                </div>
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="SC">SC</option>
+                    <option value="PR">PR</option>
+                    <option value="RS">RS</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Área deInteresses</legend>
+                <label>Informática
+                    <input type="checkbox" value="info" name="info">
+                </label>
+                <label>Politica
+                    <input type="checkbox" value="politica" name="politica">
+                </label>            
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem Longa</legend>
+                <textarea style="resize:none" name="msg" cols="35" rows="10"></textarea>
+                <textarea style="resize:none" cols="35" rows="10" readonly>  Aqui você está lendo o contrato, se tiver de acordo.. selecione o radio button abaixo.. 
+                </textarea>
+                <label><input type="checkbox" checked>Li e Aceito...</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Produto</legend>
+                <label>Valor</label>
+                <input type="range" min="0" max="500000" step=".500">
+                <label>Cor</label>
+                <input type="color">
+                <select name="varios" multiple size="6">
+                    <option value="um">Opcao1</option>
+                    <option value="um">Opcao2</option>
+                    <option value="um">Opcao3</option>
+                    <option value="um">Opcao4</option>
+                    <option value="um">Opcao5</option>
+                    <option value="um">Opcao6</option>
+                </select>
+            </fieldset>
+            
+            <input type="submit">
+            <input type="button" value="Button sem vida">
+            <input type="reset">
+        </form>
+    </body>
+</html>
