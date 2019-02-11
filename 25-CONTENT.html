@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="Before and After content´s ">
+        <meta name="keywords" content="html5, css">
+        
+        <style>
+            div{
+                border: 3px solid red;
+                padding: 25px;
+                margin-bottom: 3em;
+            }
+            
+            div:before{
+                content: "Texto Before ";
+                background: red;
+                font-size:18px;
+                font-weight: 400;
+                margin-right: 15px;
+            }
+            
+            div:after{
+                content:" Super Texto AFTER";
+                background: red;
+                font-size:18px;
+                font-weight: 400;
+                margin-left: 15px;
+            }
+            
+            .div2{
+                border-color:  blue;
+                position: relative;
+            }
+            
+            .div2:before{
+                background: blue;
+            }
+            
+            .div2:after{
+                content="";
+                background: blue;
+                display: inline-block;
+                padding: 5px 25px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            Texto principal da DIV
+        </div>
+        <div class="div2">
+            Outra div, com texto secundário
+        </div>
+        <article>
+            <h1>Seletores</h1>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        
+        <ul>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="http://www.google.com.br" target="_blank">Link Externo</a></li>
+            <li><a href="10-boxsizing.html" title="Link interno de aula sobre boxsizing">Link Interno</a></li>
+        
+        </ul>
+    </body>
+</html>

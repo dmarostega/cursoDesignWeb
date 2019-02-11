@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Chebox Personalizado Test</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            span{
+                display: inline-block;
+                position: relative;
+                background: #ddd;
+                border-radius: 15px;
+                border: 1px solid #aaa;
+                width:40px;
+                height: 20px;
+/*                box-sizing: border-box;*/
+                
+            }
+            
+            input[type="checkbox"] {
+                display:inline-block;
+                width:0;
+                height:0;
+                overflow: hidden;
+                opacity: 0;
+                /*visibility: hidden;*/
+            }
+            
+      
+            input[type="checkbox"]+ span:before {
+                content:'';
+                display: block;
+                position: absolute;
+                width: 36%;
+                top:2px;
+                bottom: 2px;
+                left:2px;
+                right: 2px;
+                background: #454545;
+                border:1px solid black;
+                 transition: all .4s;
+                border-radius:50%;
+            }
+            
+            input[type="checkbox"]:checked + span:before{
+                content:'';
+                background: #3bb545;
+                transform: translateX(18px);
+/*                transition: all .4s;*/
+            }
+            
+            input[type="checkbox"]:focus + span {
+                border: 1px solid black;
+/*                display: inline-block;*/
+            }            
+        </style>
+    </head>
+    <body>
+        <h1>CheckBox´s Personalizados..</h1>
+        
+        <label>
+            <input type="checkbox" >
+            <span></span>
+            Esporte
+        </label>
+        <label>
+            <input type="checkbox" >
+            <span></span>
+            Politica
+        </label>
+        <label>
+            <input type="checkbox" >
+            <span></span>
+            Educação
+        </label>
+    </body>
+</html>

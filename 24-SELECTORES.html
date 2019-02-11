@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> CSS - Selectores Compostos </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="CURSO Design WEB - SELETORES COMPOSTOS">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+            /*seleciona article se o mesmo for o primeiro filho de <body>
+            */
+            article:nth-child(1) a{
+                color: red;
+            }
+            
+            /* o elemento 2 é um hr */
+            article:nth-child(2) a{
+                color: green;
+            }
+            
+            article:nth-child(3) a{
+                color: green;
+            }
+            
+            /* filhos direto */
+            article:nth-child(1) > p {
+                color: chocolate;
+            }
+            article:nth-child(3) > p {
+                color: aqua;
+            } 
+            
+            /*irmão imediato*/
+            article:nth-child(5) h1 + p{
+                border: 2px solid red;
+                margin-bottom: 2em;
+                font-size:20px;
+                font-weight: bold;
+            }
+            
+            article:nth-child(5) h1 + p ~ p{
+                border: 2px solid orange;
+                color:darkolivegreen
+/*                margin-bottom: 2em;*/
+            }
+            
+           article:nth-child(1) 
+            p:not(.isnot){
+                font-variant: small-caps;
+                background: orange;
+            }
+            
+            a[href="#"]{
+                opacity: .2;
+            }
+            
+            a[href^="http"]{
+                background: red;
+            }
+            
+            a[title]{
+                background: blue;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            a[href$=".html"]{
+                display:inline-block;
+                width:200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>        
+        <article>
+            <h1>Seletores</h1>
+            <p class="isnot">Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        <hr>
+        <article>
+            <h1>Seletores</h1>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        <hr>
+        <article>
+            <h1>Seletores</h1>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        
+        <ul>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="http://www.google.com.br" target="_blank">Link Externo</a></li>
+            <li><a href="10-boxsizing.html" title="Link interno de aula sobre boxsizing">Link Interno</a></li>
+        
+        </ul>
+        
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pseudo-classes AND Pseudo-Elementos </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Diogo">
+        <meta name="description" content="CSS pseudo-classes & Pseudo-Elementos">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+            
+            input[type="checkbox"]:checked{
+                width: 20px;
+                height: 26px;
+                border-radius: 50%;
+            }
+            
+            button:disabled{
+                background:  #333;
+            }
+            
+            p:empty:before{
+                content:" No Pagrafo!!!"
+            }
+            
+            a:focus, a:hover, div:focus,input:focus{
+                background: #ccc;
+            }
+            
+             input[type="text"]:disabled{
+                background: #aaa;
+            }
+            
+            input[type="text"]:read-only{
+                background: red;
+            }
+            
+            input[type="text"]::placeholder{
+                color: blue;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>Css - Pseudos..</h1>
+        
+        <label>
+            <input type="checkbox" value="sim">Aceito this contract
+        </label>
+        <button>VAi</button>
+        <button disabled>Volta!!!</button>
+        
+        <p>Paragrafo Normal</p>
+        <p> </p>
+        <p></p>
+        
+        <hr>
+        
+        <input type="text">
+        <input type="text" value="Normal">
+        <input type="text" value="Input Read-only" readonly>
+        <input type="text" value="Input Disabled" disabled>
+        <input type="text" placeholder="With Placeholder">
+                            
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+        
+        <div tabindex="1">Div 1</div>
+        <div tabindex="2">Div 2</div>
+        <div tabindex="3">Div 3</div>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pseudo-classes AND Pseudo-Elementos </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Diogo">
+        <meta name="description" content="CSS pseudo-classes & Pseudo-Elementos">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            
+            html, body{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .div1{
+                width: 150px;
+                height: 50px;
+                background: red;
+                transform: translate(50%, 50%);
+            }
+            
+            /*   DIFERENÇA ENTRE POSITION RELATIV E 
+                TRANFORM: TRANLAET()            
+            */
+            
+            .div2{
+                width: 150px;
+                height: 50px;
+                background: blue;
+/*                transform: translate(50%, 50%);*/
+                position: relative;
+                left: 50%;
+            }
+            
+            .div3{
+                width:50%;                
+                overflow: hidden;
+                border: 1px solid black;
+            }            
+            
+            .div3-interna{
+                background: yellow;
+                transform: translateX(50%.25px);
+            }
+            .div4{
+                width:50%;                
+                overflow: hidden;
+                border: 1px solid black;
+            }            
+            
+            .div4-interna{
+                background: blue;
+                transform: rotate(-10deg);
+            }
+            .div5{
+                width:50%;                
+                overflow: hidden;
+                border: 1px solid black;
+            }            
+            
+            .div5-interna{
+                background: blue;
+                transform: rotate(30deg);
+                transform-origin: left top;
+            }
+            
+            .div6{
+                width:50%;                
+                overflow: hidden;
+                border: 2px solid blue;
+            }            
+            
+            .div6-interna{
+                background: green;
+                transform: rotate(30deg) translate(50px)  ;
+                transform-origin: left top;
+            }
+            .div7{
+                width:50%;                
+                overflow: hidden;
+                border: 2px solid blue;
+            }            
+            
+            .div7-interna{
+                background: green;
+                transform: translate(50px)  rotate(30deg)   ;
+                transform-origin: left top;
+            }
+            
+            .div8{
+                width: 100px;
+                height: 100px;
+                background: orange;
+                transform: skew(-50deg,30deg);
+            }
+            .div9{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                transform: scaleX(.5) scaleY(.5) translateX(130%);
+                transition: transform .5s;
+            }
+            
+            .div9:hover{
+                transform: scale(2);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Css - TRANFORM..</h1>
+        
+        <div class="div1"></div>      
+        <div class="div2"></div>  
+        
+        <hr>
+        
+        <div class="div3">
+            <div class="div3-interna">
+                Conteudo Qualquer                
+            </div>
+            <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+                </p>
+        </div>
+        <hr>
+         <div class="div4">
+            <div class="div4-interna">
+                Conteudo Qualquer               
+            </div>
+              <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+                </p>
+        </div>
+      
+      
+        <hr>
+         <div class="div5">
+            <div class="div5-interna">
+                Conteudo Qualquer               
+            </div>
+              <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+                </p>
+        </div>
+      
+        <hr>
+         <div class="div6">
+            <div class="div6-interna">
+                Conteudo Qualquer               
+            </div>
+              <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+                </p>
+        </div>
+      
+        <hr>
+         <div class="div7">
+            <div class="div7-interna">
+                Conteudo Qualquer               
+            </div>
+              <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+                </p>
+        </div>
+        
+        <div class="div8">Div8</div>
+        
+        
+        <div class="div9">Div9</div>
+      
+    </body>
+</html>

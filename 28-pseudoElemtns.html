@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pseudo-classes AND Pseudo-Elementos </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Diogo">
+        <meta name="description" content="CSS pseudo-classes & Pseudo-Elementos">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            p::first-letter{
+                float: left;
+                font-size: 3em;
+                line-height: 1;
+                display: inline-block;
+                margin-right: .1em;
+            }
+            
+            p::first-line{
+                background: #646488;
+            }
+          
+            /*
+                Verificar suporte a diferentes navegadore no Can I Use..
+            
+                FireFox.. Necessário utilizar prefixo -moz-
+            
+                Incluir antes da versão full.(para todos os outros)
+            */
+            p::-moz-selection{
+                color: red;
+                background: black;
+            }
+                
+            p::selection{                
+                color: red;
+                background: black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Css - Pseudo Elementos..</h1>
+        
+        
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+        </p>
+        <p>
+        Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+        </p>
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+        </p>
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+        </p>
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Viva Forevis aptent taciti sociosqu ad litora torquent. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Si num tem leite então bota uma pinga aí cumpadi!
+        </p>
+      
+    </body>
+</html>
