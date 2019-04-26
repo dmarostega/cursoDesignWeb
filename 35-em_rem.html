@@ -10,7 +10,13 @@
         <meta name="viewport" content="width=device-width">
         <style>
             body{
+                /*  elemento pai */
                 font: 16px sans-serif;
+                /*  
+                    font-size 50% == 16px / 2 :> 16px é default (tamanho padrão)
+                */
+/*                font: 50% sans-serif;*/
+/*                font: 8px sans-serif;*/
             }
             
             h1{
@@ -20,7 +26,15 @@
             div {
                 border: 1px solid black;
                 padding: 16px;
+                /* 1 x o tabamnho da font-size do elemento pai*/
+                /*padding: 1em; */
+                
+                
+                /* sobrescreve o font-size do pai, modificando o 'em' dos elementos*/
+                /*font-size: 20px;*/ 
                 width: 320px;
+                /*  320px / 16px = 20em */
+                /*  width: 20em; */
                 margin: 0 auto;
             }
             

@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Media Queries   </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                background: yellow;
+                font-size: 16px;
+            }
+            
+            .container{
+                background: white;
+                padding: 15px;
+                font-size:24px;
+            }
+            
+            .container div{
+                background: #ccc;
+                margin-bottom: 15px;
+                height: 40px;
+                font-size:22px;
+            }
+            
+            .clearfix::after{
+                content:'';
+                display:block;
+                clear:both;
+            }
+            /*quando tela fica maior que 600px, aplica estilo */
+            @media screen and (min-width:600px){
+                body{
+                    background: orange;
+                    font-size:32px;
+                }
+                
+                .container div{
+                    width: calc(50% - 30px);
+/*                    width: 48%;*/
+                    float: left;
+                    margin: 15px;
+/*                    margin-left: 1%;*/
+                }
+            }
+            
+          /*  .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+            */
+        </style>
+    </head>
+    <body>
+        <h1>Media Queries  examples </h1>
+        <p>
+            Um pequeno paragrafo qualquer..
+        </p>
+        
+        <div class="teste"></div>
+        
+        <div class="container clearfix">
+            <div>div 1</div>           <div>div 2</div>
+        </div>
+    </body>
+</html>

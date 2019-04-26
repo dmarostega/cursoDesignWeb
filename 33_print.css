@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+    color: black;
+}
+
+a:after{
+    content: " ( " attr(href) " )";
+    display: inline-block;
+    margin: 15px;    
+}
