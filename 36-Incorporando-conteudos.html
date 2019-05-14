@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+        <style>
+              iframe{
+/*                height: 31em;*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Incorporando Conteudos</h1>
+        <h2>Audio, Video e IFrames</h2>
+        <hr>
+        <h3>Audio</h3>
+<!-- 
+    autoplay: alguns browser podem bloquear Ex. Chrome, safari 
+    loop: reinciar assim que termianr
+-->
+        <audio controls autoplay >
+            <source src="media/media/mozart_trompa.mp3" type="audio/mpe">
+            <source src="media/media/mozart_trompa.ogg"
+                    type="audio/ogg">
+            <p>Seu browser não suporta esse recurso!</p>
+        </audio>
+        
+        <h3>Vídeo</h3>
+        <video controls >
+            <source src="media/media/video.mp4" type="video/mp4">
+            <source src="media/media/video.ogv" type="video/ogv">
+            <source src="media/media/video.webm" type="video/webm">
+            <p>Seu browser não suporta esse recurso!</p>
+
+        </video>
+        
+        <h3>IFrame</h3>
+        <iframe src="23-transition.html"></iframe>
+        <iframe src="https://www.ingressonacional.com.br/"
+                width="100%" height="500"
+                frameborder="3"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-HQOXgapnOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        <h3>Figure</h3>
+        <figure>
+            <img src="imagens/html5.png">
+            <figcaption> legenda da imagem html 5</figcaption>
+        </figure>
+        
+    </body>
+</html>
