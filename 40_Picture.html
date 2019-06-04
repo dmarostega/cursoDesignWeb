@@ -2,7 +2,7 @@
 <!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
 <html lang="pt-br">
     <head>
-        <title> pagina de exemplo estrutura basica </title>
+        <title>Curso Web Design - Imagens responsivas de verdade... </title>
         <meta charset="utf-8">
         <meta name="author" content="Daniel">
         <meta name="description" content="descrição bacanuda">
@@ -13,7 +13,12 @@
         </style>
     </head>
     <body>
+<!--        ERRADP      -->
+<!--        <img src="rwd-images/640_mob.jpg" media="(max-width: 40em)">-->
+<!--        <img src="rwd-images/1280.jpg" media="(min-width: 40em)">-->
+        
         <h1>Pictures</h1>
+        <p>Não é imagem apenas ilustrativa, esse tipo de imagem fazem parte do conteúdo do site.</p>
         <picture>
             <source 
                     media="(min-width: 480px)" 
@@ -24,5 +29,27 @@
             <source sizes="100vw" srcset="rwd-images/822_mob.jpg 822w, rwd-images/640_mob.jpg 640w, rwd-images/320_mob.jpg 320w">
             <img src="rwd-images/1280.jpg" alt="Alternative text!">
         </picture>
+        <picture>
+            <source srcset="rwd-images/img1.svg" type="image/svg+xml">
+            <source srcset="rwd-images/img2.webp" type="image/webp">
+            <img src="imagens/html5.png" alt="TYPE: define a imagem a ser baixar dependendo se o browser tiver su">
+        </picture>
+<pre>
+    IMG´s <img />
+    srcset="";
+        rwd-images/1280.jpg 1280w -> ultimo item descreve a largura da imagem;
+        pode ter mais do que 2 itens separados por virgula, normalemnte para diferenciar tamanhos;
+
+    sizes= informa qual o tamanho do container da imagem...(o tamanho que a imagem será renderizada, antes de carregar        algum css); 
+        ex: 33.33vw -> 1/3 da largura da viewport;
+        E se utilizarmos media queries?
+        (min-width: 480px 33.33vw, 100vw) ->se for maior que 480px utiliza o '33.33vw', senão utiliza o '100vw' (100% da viewport)
+    
+    PICTURE: DEFINE VÁRIAS IMAGENS DEPENDENDO DO CONTEXTO... 
+        type: define tipos de imagens que devem ser baixads, porém se o browser não tiver suporte não executa.
+
+
+
+</pre>
     </body>
 </html>
